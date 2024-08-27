@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A password strength checker that evaluates the strength of user-entered passwords.">
+        <title>Password Strength Checker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Password Strength Checker</h1>
+            <label for="password">Enter your password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password">
+                <span id="togglePassword" class="toggle-password">
+                    <!-- Use an eye icon for showing/hiding the password -->
+                    <img src="eye-icon.png" alt="Show/Hide Password">
+                </span>
+            </div>
+            <div id="strengthMessage"></div>
+            <div id="strengthBar">
+                <div id="strengthIndicator"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
